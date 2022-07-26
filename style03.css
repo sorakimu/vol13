@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Noto Serif JP',serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a{
+    transition: 0.3s;
+}
+img {
+    display: block;
+    height: auto;
+}
+
+.tage,.animate__animated{
+    margin: 24px;
+    position: absolute;
+}
+
+.line{
+    position: absolute;
+    top: 86px;
+    left: 312px;
+    transform: translate(-50%, -50%)
+}
+
+.p{
+    margin: 8px;
+    position: absolute;
+    max-width: 320px;
+    top: 480px;
+    left: 40px;
+}
+
+.p2{
+    margin: 8px;
+    position: absolute;
+    top: 480px;
+    left: 456px;
+    max-width: 320px;
+}
+
+
+.meisi{
+    position: absolute;
+    display: flex;
+    margin: 56px;
+    top: 48px;
+}
+
+.gaimu{
+    margin: 16px;
+    height: 360px;
+    margin-left: 56px;
+}
+
+.koukoku{
+    margin: 16px;
+    height: 240px;
+    margin-left: 160px;
+    margin-top: 80px;
+}
+
+
+.page-headr{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.waku{
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    top: 65.68%;
+    right: 20px;
+}
+
+a:link{
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: white;
+}
+
+.menu-list{
+    width: 192px;
+    flex-direction: column;
+    text-align: center;
+    line-height: 36px;
+    margin: 24px;
+    
+    text-decoration: none;
+}
+
+.menu01,.menu02,.menu03,.menu04,.menu05,.menu00{
+    position: relative;
+    z-index: 1;
+}
+
+.menu01::before,.menu02::before,.menu03::before,.menu04::before,.menu05::before,.menu00::before{
+    background: #a2a2a2;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 94%;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    margin: auto;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+    z-index: -1;
+}
+
+.menu01:hover::before,.menu02:hover::before,.menu03:hover::before,.menu04:hover::before,.menu05:hover::before,.menu00:hover::before{
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+@media all and (max-width: 480px) {
+    .meisi{
+        flex-direction: column;
+    }
+
+    .ps{
+        flex-direction: column;
+    }
+}
